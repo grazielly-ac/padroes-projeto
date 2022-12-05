@@ -1,9 +1,16 @@
 package br.com.gof;
 
+import br.com.gof.factory.FabricaNotificacoes;
+import br.com.gof.factory.Notificacao;
+
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		/*
+		 * FabricaNotificacoes fabrica = new FabricaNotificacoes(); Notificacao
+		 * notificacao = fabrica.criarNotificacao("email");
+		 * notificacao.notificarUsuario();
+		 */
 
 	}
 
