@@ -19,7 +19,7 @@ public class AcessoSistema4Thread {
 					if(instance == null) {
 						instance = new AcessoSistema4Thread();
 					}
-				}
+				} 
 			}
 			return instance;
 		
