@@ -3,14 +3,15 @@ package br.com.gof.factory;
 public class FabricaNotificacoes {
 
 	public Notificacao criarNotificacao(String entrada) {
+		String entradaRecebida = entrada.trim();
 		Notificacao recebe = null;
 
-		if (entrada.toUpperCase() == null || entrada.isEmpty()) {
-			throw new IllegalArgumentException("Valor inválido");
+		if (entradaRecebida.toUpperCase() == null || entradaRecebida.isEmpty()) {
+			return null;
 		}
 
-		switch (entrada.toUpperCase()) {
-		case "SMS" -> recebe = new NotificacaoEmail();
+		switch (entradaRecebida.toUpperCase()) {
+		case "SMS" -> recebe = new NotificacaoSMS();
 		case "EMAIL" -> recebe = new NotificacaoEmail();
 		default -> throw new IllegalArgumentException("Valor desconhecido " + entrada);
 		}
