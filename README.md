@@ -10,7 +10,7 @@ Singleton : +getInstance()
 Singleton : -<<constructor>> Singleton()
 ```
 
-**FACTORY METHOD** - método que fabrica objetos, uma fábrica. Temos um super tipo. Normalmente o SuperTipo é uma interface ou classe abstrata e temos subtipos que implementam ou herdam SuperTipo se for uma interface. Na factory teremos um método que vai ter a responsabilidade de criar um objeto dos subtipos e irá retornar o subtipo. Ele permite desacoplamento.
+**FACTORY METHOD** - O padrão de design de fábrica define uma interface (uma interface java ou uma classe abstrata) para criar o objeto e permite que as subclasses decidam qual classe instanciar. O método de fábrica na interface permite que uma classe adie a instanciação para uma ou mais subclasses concretas.Ele permite desacoplamento. Segundo o GOF (Group Of Four) o padrão Factory Method é: “Um padrão que define uma interface para criar um objeto, mas permite às classes decidirem qual classe instanciar. O Factory Method permite a uma classe deferir a instanciação para subclasses”.
 
 ```mermaid
 classDiagram
